@@ -10,6 +10,7 @@ address = os.environ.get('ADDRESS')
 
 value = getValue()
 value_in_wei = str(getWeiValue(value))
+print("MY ORDER: ", value_in_wei)
 salt = generateSalt()
 salt_integer = int(salt, 16)
 order_duration = int(time.time()) + 3600
