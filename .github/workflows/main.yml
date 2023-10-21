@@ -40,6 +40,7 @@ jobs:
             ADDRESS: ${{ secrets.ADDRESS }}
             PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
             API_KEY: ${{ secrets.API_KEY }}
+            ETHEREUM_RPC: ${{ secrets.ETHEREUM_RPC }}
         run: |
           python3 main.py
           echo "## Sending orders" >> $GITHUB_STEP_SUMMARY
