@@ -10,7 +10,7 @@ from weth_balance import getWETHbalance
 address = os.environ.get('ADDRESS')
 balance = getWETHbalance(address)
 
-value = getValue()
+value = getValue(balance)
 value_in_wei = str(getWeiValue(value))
 salt = generateSalt()
 salt_integer = int(salt, 16)
